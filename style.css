@@ -14,14 +14,7 @@ body {
   font-size: calc(0.85rem + 0.35vmin);
 }
 
-nav ul,
-header,
-main,
-.profile {
-  max-width: 76rem;
-  margin: 0 auto;
-  padding: 0 0.8rem;
-}
+/* typography etc. */
 
 h1 {
   margin: 0 0 0.2em;
@@ -55,11 +48,6 @@ h4 {
   font-weight: 600;
 }
 
-.link-github svg {
-  width: 0.75em;
-  fill: currentColor;
-}
-
 p,
 li {
   font-size: calc(0.85rem + 0.35vmin);
@@ -75,11 +63,11 @@ ol {
 }
 
 ul {
-  padding-left: 1.2em;
+  padding-left: 0.8em;
 }
 
 ol {
-  padding-left: 1.3em;
+  padding-left: 1.6em;
 }
 
 a,
@@ -92,6 +80,26 @@ a:focus {
   color: hsl(208, 50%, 42%);
   text-decoration: underline;
 }
+
+/* common */
+
+nav ul,
+header,
+main,
+.profile {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 0.8rem;
+}
+
+.link-github svg {
+  width: 0.75em;
+  stroke: currentColor;
+  fill: transparent;
+  stroke-width: 3;
+}
+
+/* page structure */
 
 .skip-link {
   display: none;
@@ -117,7 +125,7 @@ blockquote strong {
 }
 
 header {
-  padding-top: 2rem;
+  padding-top: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -138,6 +146,15 @@ header h2 {
 
 header p {
   margin: 0;
+}
+
+header .link-github {
+  text-decoration: none;
+  border: 1px solid #bcbcbc;
+  padding: 0.3em;
+  border-radius: 0.25rem;
+  order: -1;
+  margin-left: auto;
 }
 
 nav {
@@ -170,25 +187,63 @@ ul ::marker {
   font-size: 0.75em;
 }
 
+body > aside:nth-child(6) {
+  background-color: hsl(0, 0%, 95%);
+  margin-top: 3rem;
+}
+
+body > aside:nth-child(6) > .container {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 1.6rem 0.8rem 4rem;
+}
+
+body > aside:nth-child(6) > .container > h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: calc(0.85rem + 0.85vmin);
+  font-weight: 900;
+  color: #6f6f6f;
+}
+
 .features {
   padding: 0;
   list-style: none;
   display: flex;
   flex-flow: row wrap;
+  margin-bottom: 0.5rem;
 }
 
 .features li {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
-  padding: 1rem;
-  flex: 0 1 12rem;
-  background-color: hsl(0, 0%, 95%);
+  padding: 0.6rem 1rem 1rem;
+  flex: 1 1 12rem;
+  max-width: 16rem;
+  background-color: hsl(0, 0%, 100%);
+  font-size: calc(0.75rem + 0.35vmin);
+  border-radius: 0.25rem;
+}
+
+.features > li > span {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.features a {
+  font-size: calc(0.85rem + 0.85vmin);
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.features > li > span > span {
+  flex: 1 0 100%;
 }
 
 .page-footer {
-  background: hsl(0, 0%, 95%);
+  background: hsl(0, 0%, 90%);
   margin: 0;
-  padding: 1rem;
+  padding: 1.5rem 1rem 1rem;
 }
 
 .page-footer > div:nth-child(1) {
@@ -212,11 +267,17 @@ ul ::marker {
   padding: 0;
   flex-flow: row wrap;
   flex: 1 0 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid hsl(0, 0%, 75%);
+  padding-bottom: 1.5rem;
 }
 
 .page-footer li {
   margin-right: 1em;
+}
+
+.page-footer ul a {
+  text-decoration: none;
 }
 
 .page-footer > div:nth-child(1) > p:nth-child(3) {
@@ -226,10 +287,4 @@ ul ::marker {
 
 .page-footer > div:nth-child(1) > p:nth-child(4) {
   font-size: calc(0.65rem + 0.35vmin);
-}
-
-body > aside:nth-child(6) {
-  max-width: 76rem;
-  margin: 0 auto 4rem;
-  padding: 0 0.8rem;
 }
