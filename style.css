@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: calc(0.85rem + 0.35vmin);
+  background-color: hsl(335, 20%, 99%);
 }
 
 /* typography etc. */
@@ -28,7 +29,8 @@ h1 {
 }
 
 h2 {
-  margin-top: 3rem;
+  margin-top: 0;
+  padding-top: 1.2em;
   font-size: calc(1.3rem + 1.4vmin);
   margin-bottom: 0.25em;
   font-weight: 300;
@@ -84,12 +86,23 @@ a:focus {
 
 /* common */
 
-nav ul,
+header,
+nav,
 main,
-.profile {
-  max-width: 76rem;
+.profile,
+body > aside:nth-child(6),
+.page-footer {
+  padding: 0 2rem;
+}
+
+header .container,
+nav ul,
+main .container,
+.profile .container,
+body > aside:nth-child(6) .container,
+.page-footer .container {
   margin: 0 auto;
-  padding: 0 0.8rem;
+  max-width: 76rem;
 }
 
 .link-github svg {
@@ -131,9 +144,6 @@ header {
 }
 
 header .container {
-  max-width: 76rem;
-  margin: 0 auto;
-  padding: 0 0.8rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -154,7 +164,7 @@ header p {
 
 header .link-github {
   text-decoration: none;
-  border: 1px solid #bcbcbc;
+  border: 1px dashed hsl(335, 50%, 70%);
   padding: 0.3em;
   border-radius: 0.25rem;
   order: -1;
@@ -168,7 +178,7 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  padding: 1em;
+  padding: 1em 0;
   flex-flow: row wrap;
 }
 
@@ -197,9 +207,8 @@ body > aside:nth-child(6) {
 }
 
 body > aside:nth-child(6) > .container {
-  max-width: 76rem;
-  margin: 0 auto;
-  padding: 1.6rem 0.8rem 4rem;
+  padding-top: 1.6rem;
+  padding-bottom: 4rem;
 }
 
 body > aside:nth-child(6) > .container > h2 {
@@ -252,15 +261,13 @@ body > aside:nth-child(6) > .container > h2 {
 .page-footer {
   background-color: hsl(335, 50%, 91%);
   margin: 0;
-  padding: 1.5rem 1rem 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 
-.page-footer > div:nth-child(1) {
+.page-footer .container {
   display: flex;
   flex-flow: row wrap;
-  max-width: 76rem;
-  margin: 0 auto;
-  padding: 0 0.8rem;
 }
 
 .page-footer > div:nth-child(1) > p:nth-child(1) {
