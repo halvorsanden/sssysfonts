@@ -120,7 +120,9 @@ body > aside:nth-child(6) .container,
 /* page structure */
 
 .skip-link {
-  display: none;
+  display: block;
+  max-height: 0;
+  overflow: hidden;
 }
 
 strong {
