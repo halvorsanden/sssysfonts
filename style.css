@@ -159,6 +159,7 @@ header .container {
 
 header h2 {
   margin: 0 0 0.3em;
+  padding: 0;
   flex: 1 0 100%;
   font-size: calc(0.85rem + 1.2vmin);
   line-height: 1.25;
@@ -199,13 +200,41 @@ nav a {
   text-decoration: none;
 }
 
+main {
+  outline: none;
+}
+
 main ul {
   column-width: 28ch;
 }
 
-ul ::marker {
-  color: hsl(0, 0%, 20%);
-  font-size: 0.75em;
+.link-guidelines,
+.profile > div > a,
+.link-downloadcss,
+.link-downloadhtml,
+.link-codepen,
+.link-allstyles {
+  text-decoration: none;
+  border: 1px dashed hsl(335, 50%, 70%);
+  padding: 0.3em;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.link-github:hover,
+.link-github:focus,
+.profile > div > a:hover,
+.profile > div > a:focus {
+  text-decoration: underline;
+}
+
+.link-downloadcss,
+.link-downloadhtml {
+  margin-right: 0.5rem;
+}
+
+.profile {
+  margin-top: 2rem;
 }
 
 body > aside:nth-child(6) {
