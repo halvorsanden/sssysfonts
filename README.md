@@ -7,8 +7,8 @@
 - Advocate system fonts.
 - Demonstrate typography in a text-heavy document.
 - Use no media queries.
-- Contribute to [a cool project](https://github.com/5t3ph/stylestage) that showcases different CSS techniques and serves as a learning resource.
-- To learn, not just use what I know.
+- Contribute to a cool project that showcases different CSS techniques and serves as a learning resource.
+- Learn something new.
 
 ### System fonts have become my go-to for most projects because:
 
@@ -20,3 +20,11 @@
 - Fonts that draw attention to themselves, draw attention away from the content or interface.
 - Fonts and typography can not rise above a neutral effect on a brand.
 - It’s exciting not knowing exactly how it will look on your screen.
+
+### Code quality
+
+The [Stylestage](https://github.com/5t3ph/stylestage) project shows the strength and flexibility of CSS. It also demonstrates that HTML and CSS are not structure and style separated – they are intertwined. It’s impossible to build a universal HTML structure that you can do anything with CSS-wise.
+
+While recognising that this is a fun way to challenge oneself and learn new things, I would have liked some more classes in order to avoid a few ugly CSS selectors. There are also a couple of minor structural changes that I think could have led to even better semantics and typography.
+
+While one can argue that the CSS is not at the level it could have been because of zero control over the HTML – that would have contradicted the whole point of the project.
