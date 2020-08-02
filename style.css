@@ -2,7 +2,7 @@
   --pink70: hsl(335, 50%, 70%);
   --pink91: hsl(335, 50%, 91%);
   --pink95: hsl(335, 50%, 95%);
-  --bluegray44: hsl(217, 8%, 44%);
+  --bluegray40: hsl(217, 8%, 40%);
 
   --txtbody: clamp(0.9rem, 1.6vmin, 1.35rem);
   --txtsmall: clamp(0.83rem, 1.45vmin, 1.15rem);
@@ -40,7 +40,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   flex: 1 0 100%;
-  color: var(--bluegray44);
+  color: var(--bluegray40);
 }
 
 h2 {
@@ -51,6 +51,7 @@ h2 {
   margin-bottom: 0.25em;
   font-weight: 300;
   line-height: 1.1;
+  overflow-wrap: anywhere;
 }
 
 h3 {
@@ -134,7 +135,7 @@ main,
 .profile,
 body > aside:nth-child(6),
 .page-footer {
-  padding: 0 2rem;
+  padding: 0 6vw;
 }
 
 header .container,
@@ -201,8 +202,9 @@ header h2 {
   margin: 0 0 0.3em;
   padding: 0;
   flex: 1 0 100%;
-  font-size: calc(0.85rem + 1.2vmin);
-  font-size: var(--txth3);
+  font-size: calc(0.85rem + 0.85vmin);
+  font-size: calc((var(--txth2) + var(--txth3)) / 2);
+  color: var(--bluegray40);
   line-height: 1.25;
   font-weight: 600;
 }
@@ -230,7 +232,7 @@ nav ul {
 
 nav li {
   margin-right: 1em;
-  font-size: calc(0.75rem + 1vmin);
+  font-size: calc(0.85rem + 0.85vmin);
   font-size: var(--txth3);
   font-weight: 600;
 }
@@ -258,12 +260,12 @@ main ul {
 
 body > aside:nth-child(6) {
   background-color: var(--pink95);
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 body > aside:nth-child(6) > .container {
   padding-top: 1.4rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 body > aside:nth-child(6) > .container > h2 {
@@ -272,7 +274,7 @@ body > aside:nth-child(6) > .container > h2 {
   font-size: calc(0.85rem + 0.85vmin);
   font-size: var(--txth3);
   font-weight: 900;
-  color: var(--bluegray44);
+  color: var(--bluegray40);
 }
 
 .features {
@@ -329,7 +331,7 @@ body > aside:nth-child(6) > .container > h2 {
 }
 
 .page-footer p {
-  font-size: calc(0.65rem + 0.35vmin);
+  font-size: calc(0.75rem + 0.35vmin);
   font-size: var(--txtsmall);
 }
 
