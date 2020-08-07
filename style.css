@@ -2,13 +2,13 @@
   --pink70: hsl(335, 50%, 70%);
   --pink91: hsl(335, 50%, 91%);
   --pink95: hsl(335, 50%, 95%);
-  --bluegray40: hsl(217, 8%, 40%);
+  --bluegray40: hsl(217, 21%, 40%);
 
-  --txtbody: clamp(0.9rem, 1.6vmin, 1.35rem);
-  --txtsmall: clamp(0.83rem, 1.45vmin, 1.15rem);
-  --txth3: clamp(1.1rem, 2.4vmin, 1.8rem);
+  --txtbody: clamp(1rem, 1.6vmin, 1.35rem);
+  --txtsmall: clamp(0.9rem, 1.45vmin, 1.15rem);
+  --txth3: clamp(1.2rem, 2.4vmin, 1.8rem);
   --txth2: clamp(1.5rem, 3.6vmin, 2.6rem);
-  --txth1: clamp(1.4rem, 16vmin, 13rem);
+  --txth1: clamp(1.4rem, 17vmin, 14rem);
 }
 
 html {
@@ -38,7 +38,7 @@ h1 {
   line-height: 0.8;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: -0.025em;
   flex: 1 0 100%;
   color: var(--bluegray40);
 }
