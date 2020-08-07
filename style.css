@@ -354,6 +354,7 @@ body > aside:nth-child(6) > .container > h2 {
 
 .page-footer li {
   margin-right: 1em;
+  margin-bottom: 0.5em;
 }
 
 .page-footer ul a {
