@@ -107,6 +107,10 @@ a:focus {
   text-decoration: underline;
 }
 
+a:focus {
+  outline: 2px solid var(--pink70);
+}
+
 strong {
   font-style: italic;
   font-weight: 400;
@@ -180,9 +184,18 @@ header .link-github,
 /* page structure */
 
 .skip-link {
-  display: block;
-  max-height: 0;
-  overflow: hidden;
+  text-decoration: none;
+  padding: 0.3em 0.5em;
+  display: inline-block;
+  left: 6vw;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.15s;
+}
+
+.skip-link:focus {
+  background-color: var(--pink95);
+  transform: translateY(0%);
 }
 
 header {
