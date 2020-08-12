@@ -1,6 +1,6 @@
 # sssysfonts
 
-[Stylestage](https://github.com/5t3ph/stylestage) contribution to showcase the use of system fonts
+[Style Stage](https://github.com/5t3ph/stylestage) contribution to showcase the use of system fonts
 
 ### Goals
 
@@ -26,10 +26,6 @@
 
 There is only fallback for font-sizes set using [clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp), which was new in 2020.
 
-### Code quality
+### Article
 
-The [Stylestage](https://github.com/5t3ph/stylestage) project shows the strength and flexibility of CSS. It also demonstrates that HTML and CSS are not structure and style separated – they are intertwined. It’s impossible to build a universal HTML structure that you can do anything with CSS-wise.
-
-While recognising that this is a fun and effective way to learn and share, I would have liked some more classes to avoid a few ugly CSS selectors. There are also a couple of minor structural changes that I think could have led to even better semantics and typography.
-
-One can argue that the CSS is not at the level it could have been because of zero control over the HTML, but that would have contradicted the whole point of the project.
+I wrote an article about [what I learnt](https://8yd.no/article/contributing-to-style-stage)
